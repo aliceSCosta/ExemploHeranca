@@ -16,5 +16,18 @@ namespace ExemploHeranca
         {
             InitializeComponent();
         }
+
+        private void dvgCadastros_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void btnEnviar_Click(object sender, EventArgs e)
+        {
+            Carro c = new Carro();
+            c.Marca = cmbMarca.Text;
+            c.Modelo = txtModelo.Text;
+            c.MesesGarantia = Convert.ToInt32(nudGarantia.Value);
+        }
     }
 }
